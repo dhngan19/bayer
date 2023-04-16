@@ -8,13 +8,13 @@
     &.container-md {
         max-width: unset;
     }
-    height: 350px;
+    margin-bottom: 80px;
+    height: 400px;
     position: relative;
     .banner-content-res {
       position: absolute;
-      bottom: 0;
+      bottom: -60px;
       left: 0;
-      // display: none;
     }
     .banner-content {
       height: 80px;
@@ -54,7 +54,7 @@
       }
     }
     .banner-img {
-      height: 350px;
+      height: 400px;
     }
   }
   @include responsive("small") {
@@ -65,7 +65,7 @@
     position: relative;
     .banner-content-res {
       position: absolute;
-      bottom: 0;
+      bottom: -60px;
       left: 0;
     }
     .banner-content {
@@ -112,12 +112,6 @@
 }
 
 .gallery {
-  @include responsive("extra-large") {
-  }
-
-//   @include responsive("medium") {
-//   }
-
   @include responsive("medium") {
     h2 {
       margin-top: 30px;
