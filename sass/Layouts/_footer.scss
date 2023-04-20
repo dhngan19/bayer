@@ -1,7 +1,7 @@
 footer {
     .footer_contain {
-        margin-top: 50px;
         background-color: #624963;
+        margin-top: 50px;
         overflow: hidden;
         .footer_top {
             padding: 58px 70px 0px;
@@ -32,7 +32,7 @@ footer {
             &::before {
                 content: "";
                 width: 120%;
-                height: 50px;
+                height: 60px;
                 background-color: #624963;
                 position: absolute;
                 // border-top: 41.5px solid transparent;
