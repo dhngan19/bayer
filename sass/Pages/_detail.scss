@@ -78,7 +78,7 @@
     }
     .detail_content-right {
         border: 1px solid #0D2A40;
-        padding: 20px;
+        padding: 10px;
         p {
             color: #0075A6;
             font-size: 16px;
@@ -89,6 +89,18 @@
             list-style: none;
             li {
                 margin-bottom: 5px;
+                i {
+                    font-size: 12px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #0D2A40;
+                    font-size: 16px;
+                    font-weight: 400;
+                    &:hover {
+                        color: #ff3162;
+                    }
+                }
             }
         }
     }

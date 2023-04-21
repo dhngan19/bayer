@@ -15,7 +15,12 @@ header {
     .nav-item {
       cursor: pointer;
       padding: 0 20px;
-      text-align: center;
+      .nav-link {
+        color: #0D2A40;
+        &:hover {
+          color: #ff3162;
+        }
+      }
     }
   }
   .search-btn {
@@ -32,7 +37,7 @@ header {
         border-top: 29px solid transparent;
         border-right: 12px solid #ff3162;
         position: absolute;
-        left: -12px;
+        left: -11px;
         top: 0;
       }
     }
@@ -55,7 +60,6 @@ header {
         width: 100%;
         border: 1px solid #00617f;
         overflow: hidden;
-        // height: 30px;
         outline: none;
         font-size: 16px;
         padding: 18px 30px;
@@ -92,6 +96,13 @@ header {
     border: 0px;
     background-color: transparent;
     color: #ff3162;
+  }
+  @include responsive("medium") {
+    .header_search {
+      .search-form {
+        width: 100%;
+      }
+    } 
   }
   @include responsive("small") {
     .container {
@@ -168,6 +179,17 @@ header {
         background: #00617f;
         border-radius: 5px;
       }
+      &.sub-menu-parent-mobile {
+        ul {
+          padding: 0;
+          list-style: none;
+          li {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
       ul {
         list-style: "<";
         padding-left: 20px;
@@ -192,6 +214,16 @@ header {
     .sub-menu-child {
       height: 180px;
       margin: 0 10px;
+      &.sub-menu-child-mobile {
+        div {
+          ul {
+            padding: 0;
+            li {
+              text-align: left;
+            }
+          }
+        }
+      }
       div {
         display: none;
         ul {

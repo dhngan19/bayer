@@ -31,24 +31,43 @@
   <body>
     <!-- HEADER -->
     <header id="header-menu">
-      <div class="container-md">
+      <div class="container-lg">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/">
-            <img src="./img/logo.svg" alt="logo" id="logo"/>
-            <img src="./img/logo-white.svg" alt="logo" id="logo-white" style="display: none;"/>
-            <span> Vietnam </span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <img src="./img/logo.svg" alt="logo" id="logo" />
+            <img
+              src="./img/logo-white.svg"
+              alt="logo"
+              id="logo-white"
+              style="display: none"
+            />
+            <span> Vietnam </span> </a
+          >'
+          <div class="d-flex">
+            <div class="search-btn d-block d-lg-none">
+              <button type="submit" onclick="openSearch()" id="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i
+                  class="fa-solid fa-xmark"
+                  aria-hidden="true"
+                  style="display: none"
+                ></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+            </div>
+          </div>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -59,48 +78,67 @@
               <li class="nav-item">
                 <a class="nav-link" href="/list.html">Bản tin nông gia</a>
               </li>
-              <li class="nav-item" onclick={openMenu()} style="display: flex; align-items: center;" id="submenu-btn">
-                <span>Sản phẩm <i class="fa fa-angle-down" style="font-size: 10px;"></i> <i class="fa fa-angle-up" style="display: none; font-size: 10px;"></i></span>
+              <li
+                class="nav-item"
+                onclick="{openMenu()}"
+                style="display: flex; align-items: center"
+                id="submenu-btn"
+              >
+                <span class="nav-link"
+                  >Sản phẩm
+                  <i class="fa fa-angle-down" style="font-size: 10px"></i>
+                  <i
+                    class="fa fa-angle-up"
+                    style="display: none; font-size: 10px"
+                  ></i
+                ></span>
               </li>
             </ul>
-            <div class="search-btn">
+            <div class="search-btn d-none d-lg-block">
               <button type="submit" onclick="openSearch()" id="search-btn">
                 <i class="fa fa-search" aria-hidden="true"></i>
-                <i class="fa-solid fa-xmark" aria-hidden="true" style="display: none;"></i>
+                <i
+                  class="fa-solid fa-xmark"
+                  aria-hidden="true"
+                  style="display: none"
+                ></i>
               </button>
             </div>
           </div>
         </nav>
       </div>
-      <div class="header_search" style="display: none;" id="header_search">
+      <div class="header_search" style="display: none" id="header_search">
         <div class="container-md">
           <div class="header_search-contain">
             <form
-                  class="search-form"
-                  action=""
-                  method="get"
-                  accept-charset="utf-8"
-                >
-                  <input
-                    type="text"
-                    name="keysearch"
-                    placeholder="What are you looking for ?"
-                    value=""
-                  />
-                  <button type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
-                </form>
+              class="search-form"
+              action=""
+              method="get"
+              accept-charset="utf-8"
+            >
+              <input
+                type="text"
+                name="keysearch"
+                placeholder="What are you looking for ?"
+                value=""
+              />
+              <button type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
       <div class="sub-menu-contain">
-        <div class="container-md" style="display: flex; justify-content: end;">
+        <div class="container-md d-none d-lg-flex justify-content-end">
           <div class="sub-menu-child">
             <div id="sub1">
               <ul>
-                <li> 
-                  <a href="#">Giống ngô lai F1 997C - năng suất đỉnh cao, trồng đâu trúng đó</a>
+                <li>
+                  <a href="#"
+                    >Giống ngô lai F1 997C - năng suất đỉnh cao, trồng đâu trúng
+                    đó</a
+                  >
                 </li>
               </ul>
             </div>
@@ -109,26 +147,44 @@
                 <li><a href="#">NATIVO 750WG - Hơn cả mong đợi</a></li>
                 <li><a href="#">ANTRACOL 70WP</a></li>
                 <li><a href="#">ALIETTE 800WG</a></li>
-                <li><a href="#">VELUM 400SC  - Khỏe rễ để thành công</a></li>
-                <li><a href="#">FOLICUR 250EW - Đánh bay chết chậm trên cây tiêu</a></li>
-                <li><a href="#">Thuốc trừ bệnh MELODY DOU 66.75WP - Đặc trị sương mai</a></li>
+                <li><a href="#">VELUM 400SC - Khỏe rễ để thành công</a></li>
+                <li>
+                  <a href="#"
+                    >FOLICUR 250EW - Đánh bay chết chậm trên cây tiêu</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Thuốc trừ bệnh MELODY DOU 66.75WP - Đặc trị sương mai</a
+                  >
+                </li>
               </ul>
             </div>
             <div id="sub3">
               <ul>
                 <li><a href="#">ROUTINE START 280FS</a></li>
-                <li><a href="#">GAUCHO 600FS: Mập mầm, mướt mạ, bứt phá khởi đầu</a></li>
+                <li>
+                  <a href="#"
+                    >GAUCHO 600FS: Mập mầm, mướt mạ, bứt phá khởi đầu</a
+                  >
+                </li>
               </ul>
             </div>
             <div id="sub4">
               <ul>
-                <li><a href="#">BECANO 500SC: Thuốc trừ cỏ tiền nẩy mầm của Bayer</a></li>
+                <li>
+                  <a href="#"
+                    >BECANO 500SC: Thuốc trừ cỏ tiền nẩy mầm của Bayer</a
+                  >
+                </li>
               </ul>
             </div>
             <div id="sub5">
               <ul>
                 <li><a href="#">MOVENTO 150OD</a></li>
-                <li><a href="#">CONFIDOR 100SL - Đặc trị côn trùng chích hút</a></li>
+                <li>
+                  <a href="#">CONFIDOR 100SL - Đặc trị côn trùng chích hút</a>
+                </li>
               </ul>
             </div>
             <div id="sub6">
@@ -153,18 +209,98 @@
               <li id="sub7P">Quy trình Much More</li>
             </ul>
           </div>
-          <div style="width: 150px;">
-
-          </div>
+          <div style="width: 150px"></div>
           <div class="btn-close-sub-menu">
-            <button onclick="openMenu()">CLOSE <i class="fa-solid fa-xmark"></i></button>
+            <button onclick="openMenu()">
+              CLOSE <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="container-md d-block d-lg-none">
+          <div class="sub-menu-parent sub-menu-parent-mobile pt-2" id="sub-menu-parent-mobile">
+            <ul>
+              <li id="sub1P">Giống ngô lai Dekalb <span>></span></li>
+              <li id="sub2P">Thuốc trừ bệnh <span>></span></li>
+              <li id="sub3P">Thuốc xử lý giống <span>></span></li>
+              <li id="sub4P">Thuốc trừ cỏ <span>></span></li>
+              <li id="sub5P">Thuốc trừ sâu <span>></span></li>
+              <li id="sub6P">Hạt giống lúa lai <span>></span></li>
+              <li id="sub7P">Quy trình Much More <span>></span></li>
+            </ul>
+          </div>
+          <div class="sub-menu-child sub-menu-child-mobile pt-4">
+            <div id="sub1M">
+              <ul>
+                <li>
+                  <a href="#"
+                    >Giống ngô lai F1 997C - năng suất đỉnh cao, trồng đâu trúng
+                    đó</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="sub2M">
+              <ul>
+                <li><a href="#">NATIVO 750WG - Hơn cả mong đợi</a></li>
+                <li><a href="#">ANTRACOL 70WP</a></li>
+                <li><a href="#">ALIETTE 800WG</a></li>
+                <li><a href="#">VELUM 400SC - Khỏe rễ để thành công</a></li>
+                <li>
+                  <a href="#"
+                    >FOLICUR 250EW - Đánh bay chết chậm trên cây tiêu</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    >Thuốc trừ bệnh MELODY DOU 66.75WP - Đặc trị sương mai</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="sub3M">
+              <ul>
+                <li><a href="#">ROUTINE START 280FS</a></li>
+                <li>
+                  <a href="#"
+                    >GAUCHO 600FS: Mập mầm, mướt mạ, bứt phá khởi đầu</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="sub4M">
+              <ul>
+                <li>
+                  <a href="#"
+                    >BECANO 500SC: Thuốc trừ cỏ tiền nẩy mầm của Bayer</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="sub5M">
+              <ul>
+                <li><a href="#">MOVENTO 150OD</a></li>
+                <li>
+                  <a href="#">CONFIDOR 100SL - Đặc trị côn trùng chích hút</a>
+                </li>
+              </ul>
+            </div>
+            <div id="sub6M">
+              <ul>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div id="sub7M">
+              <ul>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <div id="body_contain">
       <!-- BREADCRUMB -->
-      <section class="container breadcrumb_custom">
+      <section class="container-md breadcrumb_custom">
           <div>
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -176,7 +312,7 @@
           </div>
       </section>
       <!-- BANNER -->
-      <section class="container detail_banner">
+      <section class="container-md detail_banner">
         <div class="detail_banner-title">
           <h2>NÔNG NGHIỆP HIỆN ĐẠI</h2>
         </div>
@@ -185,7 +321,7 @@
         </div>
       </section>
       <!-- CONTENT -->
-      <section class="container detail_content">
+      <section class="container-md detail_content pt-4">
         <div class="row">
           <div class="col-sm-12 col-md-2 detail_content-left">
             <p>Bài viết gần đây</p>
@@ -242,15 +378,23 @@
             <div class="detail_content-right">
                 <p>Từ khóa nổi bật</p>
                 <ul>
-                  <li><i class="fa fa-angle-right"></i> bayer</li>
-                  <li><i class="fa fa-angle-right"></i> khoa học cây trồng</li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> bayer</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> khoa học cây trồng</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> bayer</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> khoa học cây trồng</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> bayer</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> khoa học cây trồng</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> bayer</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> khoa học cây trồng</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> bayer</a></li>
+                  <li><a href="#"><i class="fa fa-angle-right"></i> khoa học cây trồng</a></li>
                 </ul>
             </div>
           </div>
         </div>
       </section>
       <!-- NEWS -->
-      <section class="container news">
+      <section class="container-md news">
         <div class="news_title">
           <h2>BÀI VIẾT LIÊN QUAN</h2>
         </div>

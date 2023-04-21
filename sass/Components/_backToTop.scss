@@ -8,11 +8,20 @@
     i{
         color: #fff;
         background-color: #FF3162;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 1rem;
         text-align: center;
-        line-height: 40px;
+        line-height: 35px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -9px;
+            border-top: 35.5px solid transparent;
+            border-right: 10px solid #ff3162;
+        }
     }
 }
 
