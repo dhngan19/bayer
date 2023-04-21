@@ -15,8 +15,20 @@ header {
     .nav-item {
       cursor: pointer;
       padding: 0 20px;
-      text-align: center;
+      // text-align: center;
+      .nav-link {
+        color: #0D2A40;
+        &:hover {
+          color: #ff3162;
+        }
+      }
     }
+  }
+  #navbar-toggler-btn {
+    color: #0D2A40;
+  }
+  .navbar-toggler-btn-white {
+    color: #fff!important;
   }
   .search-btn {
     padding-left: 20px;
@@ -32,7 +44,7 @@ header {
         border-top: 29px solid transparent;
         border-right: 12px solid #ff3162;
         position: absolute;
-        left: -12px;
+        left: -11px;
         top: 0;
       }
     }
@@ -190,19 +202,23 @@ header {
     }
     .sub-menu-child {
       height: 180px;
-      margin: 0 10px;
+      // margin: 0 10px;
       div {
         display: none;
         ul {
           list-style: none;
-          color: #fff;
+          color: #ababab;
+          padding: 0;
           li {
             text-align: right;
             a {
-              color: #fff;
+              color: #ababab;
               font-size: 16px;
               font-weight: 300;
               text-decoration: none;
+              &:hover {
+                color: #fff;
+              }
             }
           }
         }

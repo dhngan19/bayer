@@ -38,7 +38,14 @@
             <img src="./img/logo-white.svg" alt="logo" id="logo-white" style="display: none;"/>
             <span> Vietnam </span>
           </a>
-          <button
+          <div class="d-flex">
+            <div class="search-btn d-lg-none">
+              <button type="submit" onclick="openSearch()" id="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <i class="fa-solid fa-xmark" aria-hidden="true" style="display: none;"></i>
+              </button>
+            </div>
+            <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -46,11 +53,14 @@
             aria-controls="navbarText"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            id="navbar-toggler-btn"
           >
-            <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars"></i>
           </button>
+         
+          </div>
           <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-sm-auto me-lg-0 ms-lg-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Trang chủ</a
@@ -60,15 +70,15 @@
                 <a class="nav-link" href="/list.html">Bản tin nông gia</a>
               </li>
               <li class="nav-item" onclick={openMenu()} style="display: flex; align-items: center;" id="submenu-btn">
-                <span>Sản phẩm <i class="fa fa-angle-down" style="font-size: 10px;"></i> <i class="fa fa-angle-up" style="display: none; font-size: 10px;"></i></span>
+                <span class="nav-link">Sản phẩm <i class="fa fa-angle-down" style="font-size: 10px;"></i> <i class="fa fa-angle-up" style="display: none; font-size: 10px;"></i></span>
               </li>
             </ul>
-            <div class="search-btn">
-              <button type="submit" onclick="openSearch()" id="search-btn">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <i class="fa-solid fa-xmark" aria-hidden="true" style="display: none;"></i>
-              </button>
-            </div>
+          </div>
+          <div class="search-btn d-none d-lg-block">
+            <button type="submit" onclick="openSearch()" id="search-btn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <i class="fa-solid fa-xmark" aria-hidden="true" style="display: none;"></i>
+            </button>
           </div>
         </nav>
       </div>
@@ -95,8 +105,8 @@
         </div>
       </div>
       <div class="sub-menu-contain">
-        <div class="container-md" style="display: flex; justify-content: end;">
-          <div class="sub-menu-child">
+        <div class="container-md d-flex justify-content-lg-end justify-content-between">
+          <div class="sub-menu-child mx-4">
             <div id="sub1">
               <ul>
                 <li> 
@@ -153,10 +163,10 @@
               <li id="sub7P">Quy trình Much More</li>
             </ul>
           </div>
-          <div style="width: 150px;">
+          <div style="width: 150px;" class="d-none d-lg-block">
 
           </div>
-          <div class="btn-close-sub-menu">
+          <div class="btn-close-sub-menu d-none d-lg-block">
             <button onclick="openMenu()">CLOSE <i class="fa-solid fa-xmark"></i></button>
           </div>
         </div>
@@ -184,7 +194,7 @@
       <section class="gallery container">
         <h2>ĐỒNG HÀNH CÙNG NÔNG GIA</h2>
         <div class="row">
-          <div class="col-sm-12 col-lg-7 gallery_left">
+          <div class="col-sm-12 col-lg-7 gallery_left ps-0">
             <div class="gallery_left-item">
               <img src="./img/home/gallery1.svg" alt="" />
             </div>
@@ -192,7 +202,7 @@
               <img src="./img/home/gallery1.svg" alt="" />
             </div>
           </div>
-          <div class="col-sm-12 col-lg-5 gallery_right mt-lg-5">
+          <div class="col-sm-12 col-lg-5 gallery_right mt-lg-5 pe-0">
             <div class="gallery_right-item mt-4">
               <img src="./img/home/gallery3.svg" alt="" />
             </div>

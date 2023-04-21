@@ -12,6 +12,7 @@ const openMenu = () => {
     document.getElementById("body_contain").classList.toggle("hidden");
     document.getElementById("logo").classList.toggle("hidden");
     document.getElementById("logo-white").classList.toggle("show");
+    document.getElementById("navbar-toggler-btn").classList.toggle("navbar-toggler-btn-white")
 }
 
 const openSearch = () => {
