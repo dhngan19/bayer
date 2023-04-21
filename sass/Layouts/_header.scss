@@ -214,7 +214,29 @@ header {
     }
     .sub-menu-child {
       height: 180px;
+      // overflow-y: scroll;
       margin: 0 10px;
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #10384f;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #00617f;
+        border-radius: 5px;
+      }
+      &.sub-menu-parent-mobile {
+        ul {
+          padding: 0;
+          list-style: none;
+          li {
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
       &.sub-menu-child-mobile {
         div {
           ul {
@@ -231,12 +253,16 @@ header {
           list-style: none;
           color: #fff;
           li {
+            padding-bottom: 10px;
             text-align: right;
             a {
-              color: #fff;
+              color: #ababab;
               font-size: 16px;
               font-weight: 300;
               text-decoration: none;
+              &:hover {
+                color: #fff;
+              }
             }
           }
         }
