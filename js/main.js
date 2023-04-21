@@ -12,6 +12,7 @@ const openMenu = () => {
     document.getElementById("body_contain").classList.toggle("hidden");
     document.getElementById("logo").classList.toggle("hidden");
     document.getElementById("logo-white").classList.toggle("show");
+    console.log(123)
 }
 
 const openSearch = () => {
@@ -34,12 +35,25 @@ const openSearch = () => {
 let prevButton = '';
 const menu = document.getElementById("sub-menu-parent");
 menu.addEventListener('click', (e) => {
-    console.log(e.target.id)
     document.getElementById(e.target.id).classList.add("active");
     document.getElementById(e.target.id.slice(0, e.target.id.length - 1)).classList.add("show");
-    if (prevButton !== '') {
+    if (prevButton !== '' && prevButton !== e.target.id) {
         document.getElementById(prevButton).classList.remove("active");
         document.getElementById(prevButton.slice(0, prevButton.length - 1)).classList.remove("show");
+    }
+    prevButton = e.target.id
+})
+
+let prevButtonMobile = '';
+const menuMobile = document.getElementById("sub-menu-parent-mobile");
+menuMobile.addEventListener('click', (e) => {
+console.log(123)
+    document.getElementById(e.target.id).classList.add("active");
+    document.getElementById(e.target.id.slice(0, e.target.id.length - 1) + "M").classList.add("show");
+    
+    if (prevButton !== '' && prevButton !== e.target.id) {
+        document.getElementById(prevButton).classList.remove("active");
+        document.getElementById(prevButton.slice(0, prevButton.length - 1)+ "M").classList.remove("show");
     }
     prevButton = e.target.id
 })
