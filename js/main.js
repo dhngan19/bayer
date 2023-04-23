@@ -14,7 +14,6 @@ const openMenu = () => {
   document.getElementById("body_contain").classList.toggle("hidden");
   document.getElementById("logo").classList.toggle("hidden");
   document.getElementById("logo-white").classList.toggle("show");
-  console.log(123);
 };
 
 const openSearch = () => {
@@ -54,7 +53,6 @@ menu.addEventListener("click", (e) => {
 let prevButtonMobile = "";
 const menuMobile = document.getElementById("sub-menu-parent-mobile");
 menuMobile.addEventListener("click", (e) => {
-  console.log(123);
   document.getElementById(e.target.id).classList.add("active");
   document
     .getElementById(e.target.id.slice(0, e.target.id.length - 1) + "M")
