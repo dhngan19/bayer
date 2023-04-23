@@ -65,3 +65,15 @@
 .carousel-control-next, .carousel-control-prev {
   width: 40px;
 }
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.7;
+  margin: 0 10px;
+}
+.carousel-indicators button.active{
+  background-color: #ff3162;
+  opacity: 1;
+}
