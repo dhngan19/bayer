@@ -154,6 +154,7 @@
     }
     button {
       background-color: #de0043;
+      height: 40px;
       color: #fff;
       line-height: 2.6em;
       border: 0;
@@ -173,15 +174,17 @@
       span:last-child {
         position: relative;
         display: flex;
+        height: 40px;
         &::before {
           content: "";
-          border-top: 42px solid transparent;
+          border-top: 40px solid transparent;
           border-right: 11px solid #ff3162;
           position: absolute;
           left: -10px;
         }
         i {
           width: 2em;
+          height: 40px;
           color: #fff;
           text-align: center;
           background-color: #ff3162;
