@@ -318,13 +318,10 @@ header .navbar-toggler {
     color: #ff3162
 }
 
-@media screen and (max-width: 768px) {
-    header .header_search .search-form {
-        width:100%
-    }
-}
-
 @media screen and (max-width: 576px) {
+    header {
+        padding: 0;
+    }
     header .container {
         padding:0
     }
@@ -336,6 +333,7 @@ header .navbar-toggler {
     header .navbar-brand span {
         font-size: 20px
     }
+    
 }
 
 header#header-menu .sub-menu-contain {
@@ -448,7 +446,8 @@ header#header-menu .sub-menu-contain {
 
 .header_sub-menu .sub-menu-contain .sub-menu-child {
     height: 180px;
-    margin: 0 10px
+    margin: 0 10px;
+    overflow-y: scroll;
 }
 
 .header_sub-menu .sub-menu-contain .sub-menu-child::-webkit-scrollbar {
@@ -510,6 +509,16 @@ header#header-menu .sub-menu-contain {
 
 .header_sub-menu .sub-menu-contain .sub-menu-child div ul li a:hover {
     color: #fff
+}
+
+@media screen and (max-width: 768px) {
+    header .header_search .search-form {
+        width:100%
+    }
+    .header_sub-menu .sub-menu-contain .sub-menu-child {
+        margin: 0px;
+        margin-top: 10px;
+    }
 }
 
 footer .footer_contain {
@@ -1299,7 +1308,8 @@ footer .footer_contain .footer_bot .copyright p {
 @media screen and (max-width: 992px) {
     .banner {
         height:450px;
-        position: relative
+        position: relative;
+        margin-top: 0px;
     }
 
     .banner.container-md {
