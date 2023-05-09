@@ -449,11 +449,9 @@
                   />
                 </div>
                 <div class="col-6">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Tỉnh thành"
-                  />
+                  <select class="form-select" aria-label="Default select example" id="city">
+                    <option selected>Tỉnh thành</option>
+                  </select>
                 </div>
               </div>
               <div>
@@ -467,15 +465,27 @@
                 ></textarea>
               </div>
               <div class="form-check">
-                <input
+                <div>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="checkBoxConfirm"
+                  />
+                  <label class="form-check-label" for="checkBoxConfirm">
+                    Tôi đồng ý cho Bayer Crop Science Việt Nam sử dụng thông tin
+                    cá nhân đã cung cấp ở trên cho việc quảng bá
+                  </label>
+                </div>
+                <div>
+                  <input
                   class="form-check-input"
                   type="checkbox"
-                  id="checkBoxConfirm"
+                  id="checkBoxConfirm2"
                 />
-                <label class="form-check-label" for="checkBoxConfirm">
-                  Tôi đồng ý cho Bayer Crop Science Việt Nam sử dụng thông tin
-                  cá nhân đã cung cấp ở trên cho việc quảng bá
+                <label class="form-check-label" for="checkBoxConfirm2">
+                  Chính sách bảo vệ dữ liệu cá nhân
                 </label>
+                </div>
               </div>
               <div class="text-center">
                 <button type="submit">
@@ -671,6 +681,8 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 
     <script src="./js/main.js"></script>
   </body>

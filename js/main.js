@@ -67,9 +67,25 @@ menuMobile.addEventListener("click", (e) => {
   prevButton = e.target.id;
 });
 
-const myCarouselElement = document.querySelector('#carouselExampleControls')
+const myCarouselElement = document.querySelector("#carouselExampleControls");
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 5000,
-  wrap: true
-})
+  wrap: true,
+});
 
+var citis = document.getElementById("city");
+var Parameter = {
+  url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+  method: "GET",
+  responseType: "application/json",
+};
+var promise = axios(Parameter);
+promise.then(function (result) {
+  renderCity(result.data);
+});
+
+function renderCity(data) {
+  for (const x of data) {
+    citis.options[citis.options.length] = new Option(x.Name, x.Id);
+  }
+}
