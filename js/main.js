@@ -84,7 +84,7 @@ menuMobile.addEventListener("click", (e) => {
 
 const myCarouselElement = document.querySelector("#carouselExampleControls");
 const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 5000,
+  interval: 5000000,
   wrap: true,
 });
 
