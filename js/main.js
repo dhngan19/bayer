@@ -34,6 +34,21 @@ const openSearch = () => {
   btnSearch.querySelector(".fa-xmark").classList.toggle("show");
 };
 
+const buttonMenu = document.querySelector(".navbar-toggler");
+buttonMenu.addEventListener("click", function() {
+  if (
+    document.getElementById("header-menu").classList.contains("header_sub-menu")
+  ) {
+    document.getElementById("header-menu").classList.remove("header_sub-menu");
+    const subMenuBtn = document.getElementById("submenu-btn");
+    subMenuBtn.querySelector(".fa-angle-down").classList.remove("hidden");
+    subMenuBtn.querySelector(".fa-angle-up").classList.remove("show");
+    document.getElementById("body_contain").classList.remove("hidden");
+    document.getElementById("logo").classList.remove("hidden");
+    document.getElementById("logo-white").classList.remove("show");
+  }
+})
+
 let prevButton = "";
 const menu = document.getElementById("sub-menu-parent");
 menu.addEventListener("click", (e) => {
