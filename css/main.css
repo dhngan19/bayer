@@ -1182,17 +1182,8 @@ footer .footer_contain .footer_bot .copyright p {
   padding: 0 80px;
 }
 
-.detail_content .detail_content-center h3 {
-  color: #108000;
-  font-size: 18px;
-  font-weight: 400;
-}
-
 .detail_content .detail_content-center p {
-  font-size: 16px;
-  font-weight: 400;
   color: #10384f;
-  line-height: 22px;
   margin-bottom: 0px;
 }
 
@@ -1206,22 +1197,12 @@ footer .footer_contain .footer_bot .copyright p {
 }
 
 .detail_content .detail_content-center ul p {
-  margin: 20px 0;
-  font-size: 18px;
-  font-weight: 500;
+  margin: 0;
   color: #10384f;
 }
 
 .detail_content .detail_content-center ul li {
   color: #0d2a40;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-}
-
-.detail_content .detail_content-center span {
-  font-size: 16px;
-  font-weight: 200;
 }
 
 .detail_content .detail_content-right {
