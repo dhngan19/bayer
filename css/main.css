@@ -192,6 +192,7 @@ body {
   opacity: 1;
 }
 
+
 header {
   padding-top: 63px;
 }
@@ -1326,6 +1327,10 @@ footer .footer_contain .footer_bot .copyright p {
 }
 
 @media screen and (max-width: 992px) {
+
+.carousel-indicators {
+  margin-bottom: 0.3rem;
+}
   .banner {
     height: 450px;
     position: relative;
@@ -1374,7 +1379,8 @@ footer .footer_contain .footer_bot .copyright p {
   }
 
   .banner .banner-content div {
-    padding: 0px 0px 10px 10px;
+    padding: 10px;
+    text-align: right;
   }
 
   .banner .banner-content div p {
@@ -1392,10 +1398,12 @@ footer .footer_contain .footer_bot .copyright p {
     white-space: nowrap;
     width: 100vw;
     padding-right: 15px;
+    text-align: right;
   }
 
   .banner .banner-content div a {
     font-size: 10px;
+    margin-right: 20px;
   }
 
   .banner .banner-img {
